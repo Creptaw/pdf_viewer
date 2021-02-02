@@ -163,7 +163,7 @@ public class FlutterPluginPdfViewerPlugin implements MethodCallHandler {
             Bitmap bitmap = Bitmap.createBitmap((int) width, (int) height, Bitmap.Config.ARGB_8888);
             // Change background to white
             Canvas canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.RED);
+            canvas.drawColor(Color.WHITE);
             // Render to bitmap
             page.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);
             try {
